@@ -1,0 +1,282 @@
+03-04 18:36:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "TICKERS" ya existe
+Table "TICKERS" already exists; SQL statement:
+CREATE TABLE `tickers` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(15) NOT NULL,  `capital` INT,PRIMARY KEY (`id`)); CREATE UNIQUE INDEX `simbolo` ON `tickers` (`name`) [42101-185]
+03-04 18:36:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Nombre de columna Duplicada "CAPITAL"
+Duplicate column name "CAPITAL"; SQL statement:
+ALTER TABLE `tickers` ADD `capital` INT [42121-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.setColumns(Table.java:410)
+	at org.h2.table.TableBase.<init>(TableBase.java:45)
+	at org.h2.mvstore.db.MVTable.<init>(MVTable.java:72)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:129)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:41)
+	at org.h2.schema.Schema.createTable(Schema.java:582)
+	at org.h2.command.ddl.AlterTableAlterColumn.cloneTableStructure(AlterTableAlterColumn.java:321)
+	at org.h2.command.ddl.AlterTableAlterColumn.copyData(AlterTableAlterColumn.java:229)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:161)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:130)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at semaforo.DDBB.createrDB(DDBB.java:127)
+	at semaforo.DDBB.setup(DDBB.java:141)
+	at semaforo.Settings.<init>(Settings.java:88)
+	at semaforo.Controller.setup(Controller.java:224)
+	at semaforo.Semaforo.setUp(Semaforo.java:1736)
+	at semaforo.Semaforo.<init>(Semaforo.java:792)
+	at semaforo.Semaforo$13.run(Semaforo.java:1957)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:744)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:714)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+03-07 14:43:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "TICKERS" ya existe
+Table "TICKERS" already exists; SQL statement:
+CREATE TABLE `tickers` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(15) NOT NULL,  `capital` INT,PRIMARY KEY (`id`)); CREATE UNIQUE INDEX `simbolo` ON `tickers` (`name`) [42101-185]
+03-07 14:43:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Nombre de columna Duplicada "CAPITAL"
+Duplicate column name "CAPITAL"; SQL statement:
+ALTER TABLE `tickers` ADD `capital` INT [42121-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.setColumns(Table.java:410)
+	at org.h2.table.TableBase.<init>(TableBase.java:45)
+	at org.h2.mvstore.db.MVTable.<init>(MVTable.java:72)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:129)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:41)
+	at org.h2.schema.Schema.createTable(Schema.java:582)
+	at org.h2.command.ddl.AlterTableAlterColumn.cloneTableStructure(AlterTableAlterColumn.java:321)
+	at org.h2.command.ddl.AlterTableAlterColumn.copyData(AlterTableAlterColumn.java:229)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:161)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:130)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at semaforo.DDBB.createrDB(DDBB.java:127)
+	at semaforo.DDBB.setup(DDBB.java:141)
+	at semaforo.Settings.<init>(Settings.java:88)
+	at semaforo.Controller.setup(Controller.java:224)
+	at semaforo.Semaforo.setUp(Semaforo.java:1736)
+	at semaforo.Semaforo.<init>(Semaforo.java:792)
+	at semaforo.Semaforo$13.run(Semaforo.java:1957)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:744)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:714)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+03-07 14:46:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "TICKERS" ya existe
+Table "TICKERS" already exists; SQL statement:
+CREATE TABLE `tickers` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(15) NOT NULL,  `capital` INT,PRIMARY KEY (`id`)); CREATE UNIQUE INDEX `simbolo` ON `tickers` (`name`) [42101-185]
+03-07 14:46:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Nombre de columna Duplicada "CAPITAL"
+Duplicate column name "CAPITAL"; SQL statement:
+ALTER TABLE `tickers` ADD `capital` INT [42121-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.setColumns(Table.java:410)
+	at org.h2.table.TableBase.<init>(TableBase.java:45)
+	at org.h2.mvstore.db.MVTable.<init>(MVTable.java:72)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:129)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:41)
+	at org.h2.schema.Schema.createTable(Schema.java:582)
+	at org.h2.command.ddl.AlterTableAlterColumn.cloneTableStructure(AlterTableAlterColumn.java:321)
+	at org.h2.command.ddl.AlterTableAlterColumn.copyData(AlterTableAlterColumn.java:229)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:161)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:130)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at semaforo.DDBB.createrDB(DDBB.java:127)
+	at semaforo.DDBB.setup(DDBB.java:141)
+	at semaforo.Settings.<init>(Settings.java:88)
+	at semaforo.Controller.setup(Controller.java:224)
+	at semaforo.Semaforo.setUp(Semaforo.java:1736)
+	at semaforo.Semaforo.<init>(Semaforo.java:792)
+	at semaforo.Semaforo$13.run(Semaforo.java:1957)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:744)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:714)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+03-07 15:06:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "TICKERS" ya existe
+Table "TICKERS" already exists; SQL statement:
+CREATE TABLE `tickers` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(15) NOT NULL,  `capital` INT,PRIMARY KEY (`id`)); CREATE UNIQUE INDEX `simbolo` ON `tickers` (`name`) [42101-185]
+03-07 15:06:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Nombre de columna Duplicada "CAPITAL"
+Duplicate column name "CAPITAL"; SQL statement:
+ALTER TABLE `tickers` ADD `capital` INT [42121-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.setColumns(Table.java:410)
+	at org.h2.table.TableBase.<init>(TableBase.java:45)
+	at org.h2.mvstore.db.MVTable.<init>(MVTable.java:72)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:129)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:41)
+	at org.h2.schema.Schema.createTable(Schema.java:582)
+	at org.h2.command.ddl.AlterTableAlterColumn.cloneTableStructure(AlterTableAlterColumn.java:321)
+	at org.h2.command.ddl.AlterTableAlterColumn.copyData(AlterTableAlterColumn.java:229)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:161)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:130)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at semaforo.DDBB.createrDB(DDBB.java:127)
+	at semaforo.DDBB.setup(DDBB.java:141)
+	at semaforo.Settings.<init>(Settings.java:88)
+	at semaforo.Controller.setup(Controller.java:224)
+	at semaforo.Semaforo.setUp(Semaforo.java:1736)
+	at semaforo.Semaforo.<init>(Semaforo.java:792)
+	at semaforo.Semaforo$13.run(Semaforo.java:1957)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:744)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:714)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+03-07 15:09:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "TICKERS" ya existe
+Table "TICKERS" already exists; SQL statement:
+CREATE TABLE `tickers` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(15) NOT NULL,  `capital` INT,PRIMARY KEY (`id`)); CREATE UNIQUE INDEX `simbolo` ON `tickers` (`name`) [42101-185]
+03-07 15:09:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Nombre de columna Duplicada "CAPITAL"
+Duplicate column name "CAPITAL"; SQL statement:
+ALTER TABLE `tickers` ADD `capital` INT [42121-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.setColumns(Table.java:410)
+	at org.h2.table.TableBase.<init>(TableBase.java:45)
+	at org.h2.mvstore.db.MVTable.<init>(MVTable.java:72)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:129)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:41)
+	at org.h2.schema.Schema.createTable(Schema.java:582)
+	at org.h2.command.ddl.AlterTableAlterColumn.cloneTableStructure(AlterTableAlterColumn.java:321)
+	at org.h2.command.ddl.AlterTableAlterColumn.copyData(AlterTableAlterColumn.java:229)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:161)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:130)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at semaforo.DDBB.createrDB(DDBB.java:127)
+	at semaforo.DDBB.setup(DDBB.java:141)
+	at semaforo.Settings.<init>(Settings.java:88)
+	at semaforo.Controller.setup(Controller.java:224)
+	at semaforo.Semaforo.setUp(Semaforo.java:1736)
+	at semaforo.Semaforo.<init>(Semaforo.java:792)
+	at semaforo.Semaforo$13.run(Semaforo.java:1957)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:744)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:714)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+03-07 15:33:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "TICKERS" ya existe
+Table "TICKERS" already exists; SQL statement:
+CREATE TABLE `tickers` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(15) NOT NULL,  `capital` INT,PRIMARY KEY (`id`)); CREATE UNIQUE INDEX `simbolo` ON `tickers` (`name`) [42101-185]
+03-07 15:33:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Nombre de columna Duplicada "CAPITAL"
+Duplicate column name "CAPITAL"; SQL statement:
+ALTER TABLE `tickers` ADD `capital` INT [42121-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.setColumns(Table.java:410)
+	at org.h2.table.TableBase.<init>(TableBase.java:45)
+	at org.h2.mvstore.db.MVTable.<init>(MVTable.java:72)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:129)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:41)
+	at org.h2.schema.Schema.createTable(Schema.java:582)
+	at org.h2.command.ddl.AlterTableAlterColumn.cloneTableStructure(AlterTableAlterColumn.java:321)
+	at org.h2.command.ddl.AlterTableAlterColumn.copyData(AlterTableAlterColumn.java:229)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:161)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:130)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at semaforo.DDBB.createrDB(DDBB.java:127)
+	at semaforo.DDBB.setup(DDBB.java:141)
+	at semaforo.Settings.<init>(Settings.java:88)
+	at semaforo.Controller.setup(Controller.java:224)
+	at semaforo.Semaforo.setUp(Semaforo.java:1736)
+	at semaforo.Semaforo.<init>(Semaforo.java:792)
+	at semaforo.Semaforo$13.run(Semaforo.java:1957)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:744)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:714)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
